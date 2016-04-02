@@ -16,7 +16,7 @@ brew install ${here}/git.rb
 
 brew uninstall --force `# uninstall multiple versions` carthage
 # install `jdhealy/Carthage` with swapped-out `scripts/bootstrap` for git submodule.
-[[ -e ${here}/carthage.rb ]]`# jdhealy/Carthage «git-1·8·0-homebrew»` &&
+[[ -e ${here}/carthage.rb ]] &&
 brew install --build-from-source --HEAD ${here}/carthage.rb
 
 unset ERR_RETURN
