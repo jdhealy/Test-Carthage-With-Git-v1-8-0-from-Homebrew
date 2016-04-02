@@ -29,6 +29,5 @@ Carthage/Build
 
 # Test-Carthage-With-Git-v1-8-0-from-Homebrew
 #
-carthage.rb
 git.rb
 Cartfile

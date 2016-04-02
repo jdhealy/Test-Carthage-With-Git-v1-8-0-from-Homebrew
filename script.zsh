@@ -15,7 +15,8 @@ curl https://raw.githubusercontent.com/Homebrew/homebrew/7f25b0865af022f56cc9067
 brew install ${here}/git.rb
 
 brew uninstall --force `# uninstall multiple versions` carthage
-curl https://raw.githubusercontent.com/Homebrew/homebrew/a8713e1955823abed7d68e1f8e0e330e98a90afa/Library/Formula/carthage.rb >! ${here}/carthage.rb
+# install `jdhealy/Carthage` with swapped-out `scripts/bootstrap` for git submodule.
+[[ -e ${here}/carthage.rb ]]`# jdhealy/Carthage «git-1·8·0-homebrew»` &&
 brew install --build-from-source --HEAD ${here}/carthage.rb
 
 unset ERR_RETURN
