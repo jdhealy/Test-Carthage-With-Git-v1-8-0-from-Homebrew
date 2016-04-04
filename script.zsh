@@ -15,9 +15,9 @@ curl https://raw.githubusercontent.com/Homebrew/homebrew/7f25b0865af022f56cc9067
 brew install ${here}/git.rb
 
 brew uninstall --force `# uninstall multiple versions` carthage
-# install `jdhealy/Carthage` with swapped-out `scripts/bootstrap` for git submodule.
+# install `Carthage/Carthage` with a commit from branch `swift-2.2`.
 [[ -e ${here}/carthage.rb ]] &&
-brew install --build-from-source --HEAD ${here}/carthage.rb
+brew install --verbose --build-from-source --HEAD ${here}/carthage.rb
 
 unset ERR_RETURN
 

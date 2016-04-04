@@ -1,7 +1,7 @@
 class Carthage < Formula
   desc "Decentralized dependency manager for Cocoa"
   homepage "https://github.com/Carthage/Carthage"
-  head "https://github.com/jdhealy/Carthage.git", :branch => "git-1·8·0-homebrew", :shallow => false
+  head "https://github.com/jdhealy/Carthage.git", :using => :git, :commit => "b8c0df8f8fe2fea47469b867bdbe2381bd75714d"
 
   depends_on :xcode => ["7.1", :build]
 
